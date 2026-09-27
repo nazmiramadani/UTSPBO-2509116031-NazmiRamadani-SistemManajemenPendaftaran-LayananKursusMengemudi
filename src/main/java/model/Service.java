@@ -17,10 +17,10 @@ public class Service {
     }
     
     private void muatDataDummy() {
-        daftarSiswa.add(new KursusManual(101, "Budi Santoso", "081234567890", 5, 230000, true, 300000));
-        daftarSiswa.add(new KursusMatic(102, "Siti Rahma", "081987654321", 4, 160000, false, 300000));
-        daftarPegawai.add(new Instruktur("P001", "Pak Joko", "Mobil Manual"));
-        daftarPegawai.add(new Administrasi("P002", "Ani Lestari", "Front Office & Keuangan"));
+        daftarSiswa.add(new KursusManual(101, "Nazmi Ramadani", "081234567890", 5, 230000, true, 300000));
+        daftarSiswa.add(new KursusMatic(102, "Diandra Riskita", "081987654321", 4, 160000, false, 300000));
+        daftarPegawai.add(new Instruktur("P01", "Pak Joko", "Mobil Manual"));
+        daftarPegawai.add(new Administrasi("P02", "Ani Lestari", "Front Office & Keuangan"));
     }
     
 //SISWA
@@ -127,7 +127,7 @@ public class Service {
             daftarPegawai.add(instrukturBaru);
             System.out.println("Data Instruktur berhasil ditambahkan.");
         } else if (jabatan == 2) {
-            System.out.print("Area Tugas (Front Office/Keuangan/Dll): ");
+            System.out.print("Tugas (Front Office/Keuangan/Dll): ");
             String area = scanner.nextLine();
             Administrasi adminBaru = new Administrasi(id, nama, area);
             daftarPegawai.add(adminBaru);
@@ -157,7 +157,7 @@ public class Service {
                 System.out.print("Nama Baru: ");
                 String namaBaru = scanner.nextLine();
                 
-                System.out.print("Ingin update data spesifik jabatan (Spesialisasi/Area)? (y/n): ");
+                System.out.print("Ingin update data spesifik jabatan? (y/n): ");
                 boolean updateSpesifik = scanner.nextLine().equalsIgnoreCase("y");
                 
                 if (p instanceof Instruktur) {
@@ -172,7 +172,7 @@ public class Service {
                 } else if (p instanceof Administrasi) {
                     Administrasi admin = (Administrasi) p; 
                     if (updateSpesifik) {
-                        System.out.print("Area Tugas Baru: ");
+                        System.out.print("Tugas Baru: ");
                         String areaBaru = scanner.nextLine();
                         admin.updateDataAdmin(namaBaru, areaBaru); 
                     } else {

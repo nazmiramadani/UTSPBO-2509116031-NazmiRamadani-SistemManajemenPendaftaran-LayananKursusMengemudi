@@ -13,34 +13,14 @@ public class KursusMengemudi {
         setJumlahPertemuan(jumlahPertemuan);
     }
 
-    public int getIdPendaftaran() {
-        return idPendaftaran;
-    }
+    public int getIdPendaftaran() { return idPendaftaran; }
+    public String getNamaSiswa() { return namaSiswa; }
+    public String getNoTelepon() { return noTelepon; }
+    public int getJumlahPertemuan() { return jumlahPertemuan; }
 
-    public String getNamaSiswa() {
-        return namaSiswa;
-    }
-
-    public String getNoTelepon() {
-        return noTelepon;
-    }
-
-    public int getJumlahPertemuan() {
-        return jumlahPertemuan;
-    }
-
-    public void setNamaSiswa(String namaSiswa) {
-        this.namaSiswa = namaSiswa;
-    }
-
-    public void setNoTelepon(String noTelepon) {
-        this.noTelepon = noTelepon;
-    }
-
-    public void setJumlahPertemuan(int jumlahPertemuan) {
-        this.jumlahPertemuan = jumlahPertemuan;
-    }
-
+    public void setNamaSiswa(String namaSiswa) { this.namaSiswa = namaSiswa; }
+    public void setNoTelepon(String noTelepon) { this.noTelepon = noTelepon; }
+    public void setJumlahPertemuan(int jumlahPertemuan) { this.jumlahPertemuan = jumlahPertemuan; }
 
     public void tampilkanInfo() {
         System.out.println("ID Pendaftaran       : " + idPendaftaran);

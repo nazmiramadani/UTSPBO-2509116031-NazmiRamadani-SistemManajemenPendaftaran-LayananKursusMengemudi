@@ -12,34 +12,15 @@ public class KursusManual extends KursusMengemudi {
         this.tarifPerPertemuan = tarifPerPertemuan;
     }
 
-    public boolean isButuhSertifikat() {
-        return butuhSertifikat;
-    }
-
-    public double getBiayaSertifikat() {
-        return biayaSertifikat;
-    }
-
-    public double getTarifPerPertemuan() {
-        return tarifPerPertemuan;
-    }
+    public boolean isButuhSertifikat() { return butuhSertifikat; }
+    public double getBiayaSertifikat() { return biayaSertifikat; }
+    public double getTarifPerPertemuan() { return tarifPerPertemuan; }
     
-
-    public void setButuhSertifikat(boolean butuhSertifikat) {
-        this.butuhSertifikat = butuhSertifikat;
-    }
-
-    public void setBiayaSertifikat(double biayaSertifikat) {
-        this.biayaSertifikat = biayaSertifikat;
-    }
-
-    public void setTarifPerPertemuan(double tarifPerPertemuan) {
-        this.tarifPerPertemuan = tarifPerPertemuan;
-    }
+    public void setButuhSertifikat(boolean butuhSertifikat) { this.butuhSertifikat = butuhSertifikat; }
+    public void setBiayaSertifikat(double biayaSertifikat) { this.biayaSertifikat = biayaSertifikat; }
+    public void setTarifPerPertemuan(double tarifPerPertemuan) { this.tarifPerPertemuan = tarifPerPertemuan; }
     
-    
-
-@Override
+    @Override
     public void tampilkanInfo() {
         super.tampilkanInfo();
         System.out.println("Tipe Kursus          : Mobil Manual");

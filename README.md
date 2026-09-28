@@ -147,77 +147,61 @@ Tampilan awal program. Pengguna memilih antara kelola siswa (1), kelola pegawai 
 
 ### 4.2 Menu Kelola Kursus (Siswa)
 
-
+<img width="466" height="142" alt="Screenshot 2026-09-28 113610" src="https://github.com/user-attachments/assets/114004d8-9cf3-4c9d-ab97-5efe7b8a4189" />
 
 Submenu untuk mengelola data siswa: tambah, tampilkan, hapus, update, dan kembali ke menu utama.
 
 ### 4.3 Tampilkan Data Siswa
 
-
-
 Menampilkan seluruh siswa. Contoh keluaran data dummy:
 
-```
-ID Pendaftaran       : 101
-Nama Siswa           : Nazmi Ramadani
-No Telepon           : 081234567890
-Jumlah Pertemuan     : 5 kali
-Tipe Kursus          : Mobil Manual
-Tarif Per Pertemuan  : Rp 230000.0
-Ambil Sertifikat     : Ya
-Biaya Sertifikat     : Rp 300000.0
-Total Biaya          : Rp 1450000.0
----------------------------------------------
-```
-
-Terlihat bahwa total biaya = (5 × 230.000) + 300.000 = **Rp 1.450.000**.
+<img width="612" height="508" alt="image" src="https://github.com/user-attachments/assets/e8847920-e1f3-4e62-87c9-0711778318a5" />
 
 ### 4.4 Tambah Data Siswa
 
-
+<img width="481" height="286" alt="image" src="https://github.com/user-attachments/assets/8d16acf1-82b6-42c3-8081-17458244a0b1" />
 
 Proses input data siswa baru, mulai dari ID, nama, telepon, jumlah pertemuan, tipe kursus, hingga pilihan sertifikat. Program menampilkan pesan konfirmasi setelah data berhasil ditambahkan.
 
 ### 4.5 Hapus dan Update Data Siswa
 
+<img width="475" height="193" alt="image" src="https://github.com/user-attachments/assets/f1b102b9-d81e-40ac-98b1-755ae618eab8" />
 
+Menunjukkan penghapusan siswa berdasarkan ID (`Data berhasil dihapus`).
 
-Menunjukkan penghapusan siswa berdasarkan ID (`Data berhasil dihapus`) dan pembaruan nama serta jumlah pertemuan (`Data berhasil diperbarui`). Jika ID tidak ada, muncul pesan `Data tidak ditemukan`.
+### 4.6 Update Data Siswa
 
-### 4.6 Menu Kelola Pegawai
+<img width="487" height="234" alt="image" src="https://github.com/user-attachments/assets/0b2a7165-b3d8-4708-992f-5a5ad9073815" />
 
+Menunjukkan pembaruan nama serta jumlah pertemuan (`Data berhasil diperbarui`). Jika ID tidak ada, muncul pesan `Data tidak ditemukan`.
 
+### 4.7 Menu Kelola Pegawai
+
+<img width="387" height="120" alt="image" src="https://github.com/user-attachments/assets/d6863ac5-1c7c-4579-89dc-791f39b765c3" />
 
 Submenu untuk menambah, menampilkan, dan memperbarui data pegawai.
 
-### 4.7 Tampilkan Data Pegawai
+### 4.8 Tampilkan Data Pegawai
 
-
+<img width="486" height="352" alt="image" src="https://github.com/user-attachments/assets/0530a0dc-8b04-493e-90ab-0a9630b7413c" />
 
 Menampilkan profil pegawai dengan format berbeda sesuai jabatannya (contoh **polymorphism**):
 
-```
-ID Pegawai   : P01
-Nama Pegawai : Pak Joko
-Jabatan      : Instruktur Mengemudi
-Spesialisasi : Mobil Manual
----------------------------------------------
-ID Pegawai   : P02
-Nama Pegawai : Ani Lestari
-Jabatan      : Staf Administrasi
-Area Tugas   : Front Office & Keuangan
----------------------------------------------
-```
+### 4.9 Tambah Data
 
-### 4.8 Tambah dan Update Data Pegawai
+<img width="440" height="246" alt="image" src="https://github.com/user-attachments/assets/e6513c75-7da5-4529-b9e1-df4894a8f61d" />
 
+Menunjukkan penambahan pegawai baru. Pesan yang muncul berbeda tergantung pilihan, misalnya seperti pada digambar.
 
+### 4.10 Update Data Pegawai
 
-Menunjukkan penambahan pegawai baru serta pembaruan data. Pesan yang muncul berbeda tergantung pilihan, misalnya `Hanya nama instruktur diperbarui` atau `Nama dan spesialisasi instruktur diperbarui` (contoh **method overloading**).
+<img width="592" height="228" alt="image" src="https://github.com/user-attachments/assets/baa36b98-2675-4cfb-847d-9a985a4703e1" />
 
-### 4.9 Keluar dari Program
+Menunjukkan Update data pegawai. Pesan yang muncul berbeda tergantung pilihan, misalnya seperti pada digambar.
 
+### 4.11 Keluar dari Program
 
+<img width="626" height="227" alt="image" src="https://github.com/user-attachments/assets/de783faa-6e8b-4d97-85fe-b9f4842427c9" />
 
 Setelah memilih menu `3`, program menampilkan pesan `Terima kasih telah menggunakan aplikasi ini.` dan berhenti.
 

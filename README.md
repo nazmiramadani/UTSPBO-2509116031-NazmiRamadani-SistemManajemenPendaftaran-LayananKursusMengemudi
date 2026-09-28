@@ -163,7 +163,7 @@ Menampilkan seluruh siswa. Contoh keluaran data dummy:
 
 Proses input data siswa baru, mulai dari ID, nama, telepon, jumlah pertemuan, tipe kursus, hingga pilihan sertifikat. Program menampilkan pesan konfirmasi setelah data berhasil ditambahkan.
 
-### 4.5 Hapus dan Update Data Siswa
+### 4.5 Hapus Data Siswa
 
 <img width="475" height="193" alt="image" src="https://github.com/user-attachments/assets/f1b102b9-d81e-40ac-98b1-755ae618eab8" />
 
@@ -171,7 +171,7 @@ Menunjukkan penghapusan siswa berdasarkan ID (`Data berhasil dihapus`).
 
 ### 4.6 Update Data Siswa
 
-<img width="487" height="234" alt="image" src="https://github.com/user-attachments/assets/0b2a7165-b3d8-4708-992f-5a5ad9073815" />
+<img width="439" height="222" alt="image" src="https://github.com/user-attachments/assets/fe2ef44e-79b9-4233-b876-499143f88225" />
 
 Menunjukkan pembaruan nama serta jumlah pertemuan (`Data berhasil diperbarui`). Jika ID tidak ada, muncul pesan `Data tidak ditemukan`.
 
@@ -195,7 +195,7 @@ Menunjukkan penambahan pegawai baru. Pesan yang muncul berbeda tergantung piliha
 
 ### 4.10 Update Data Pegawai
 
-<img width="439" height="222" alt="image" src="https://github.com/user-attachments/assets/12e54c02-a0f6-4fa4-b131-f86c94b10edc" />
+<img width="592" height="228" alt="Screenshot 2026-09-28 115146" src="https://github.com/user-attachments/assets/72afda6f-8ef1-480d-af40-a7570cc86976" />
 
 Menunjukkan Update data pegawai. Pesan yang muncul berbeda tergantung pilihan, misalnya seperti pada digambar.
 

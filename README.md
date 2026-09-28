@@ -155,7 +155,7 @@ Submenu untuk mengelola data siswa: tambah, tampilkan, hapus, update, dan kembal
 
 Menampilkan seluruh siswa. Contoh keluaran data dummy:
 
-<img width="612" height="508" alt="image" src="https://github.com/user-attachments/assets/e8847920-e1f3-4e62-87c9-0711778318a5" />
+<img width="620" height="504" alt="image" src="https://github.com/user-attachments/assets/2019d6ae-3ee9-4ed6-b8db-928678e1fadc" />
 
 ### 4.4 Tambah Data Siswa
 

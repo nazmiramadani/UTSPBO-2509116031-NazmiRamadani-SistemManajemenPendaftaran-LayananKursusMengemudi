@@ -136,3 +136,17 @@ Saat program dijalankan, `Service` otomatis memuat **data dummy**:
 7. **Tampilkan Pegawai** – menampilkan profil semua pegawai.
 8. **Update Pegawai** – masukkan ID pegawai, isi nama baru, lalu pilih apakah ingin memperbarui data spesifik jabatan (spesialisasi/area tugas). Sistem memilih method *overloading* yang sesuai secara otomatis.
 9. **Keluar** – program berhenti dan `Scanner` ditutup.
+
+## 4. Penjelasan Gambar (Screenshot Output)
+
+### 4.1 Menu Utama
+
+<img width="437" height="119" alt="Screenshot 2026-09-28 113011" src="https://github.com/user-attachments/assets/0d450f10-ae6d-426e-9eef-7c4511e601ef" />
+
+Tampilan awal program. Pengguna memilih antara kelola siswa (1), kelola pegawai (2), atau keluar (3).
+
+### 4.2 Menu Kelola Kursus (Siswa)
+
+
+
+

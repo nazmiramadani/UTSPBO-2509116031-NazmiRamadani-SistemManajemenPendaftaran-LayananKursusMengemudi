@@ -75,3 +75,64 @@ UTSPBO/
 | `Administrasi` | Menambahkan atribut **area tugas** (Front Office, Keuangan, dll.) |
 
 ---
+
+## 3. Alur Program
+
+### 3.1 Persyaratan
+- **JDK 14 atau lebih baru** (program memakai sintaks `switch` dengan panah `->`).
+- IDE seperti **NetBeans** (package `com.mycompany.uts.pbo` adalah bawaan NetBeans), IntelliJ IDEA, atau VS Code; atau cukup terminal.
+
+### 3.2 Cara Menjalankan
+
+**Melalui IDE (NetBeans):**
+1. Buka NetBeans → *File* → *Open Project*, lalu pilih folder proyek.
+2. Pastikan semua file di package `model` dan file `UTSPBO.java` berada di dalam proyek.
+3. Klik kanan `UTSPBO.java` → **Run File** (atau tekan `Shift + F6`).
+
+**Melalui Terminal:**
+```bash
+# dari folder src
+javac model/*.java com/mycompany/uts/pbo/UTSPBO.java
+java com.mycompany.uts.pbo.UTSPBO
+```
+
+### 3.3 Cara Kerja Sistem
+
+Saat program dijalankan, `Service` otomatis memuat **data dummy** agar menu *Tampilkan* langsung memiliki isi:
+
+| Jenis | Data |
+|-------|------|
+| Siswa | 101 – Nazmi Ramadani (Manual, 5 pertemuan, dengan sertifikat) |
+| Siswa | 102 – Diandra Riskita (Matic, 4 pertemuan, tanpa sertifikat) |
+| Pegawai | P01 – Pak Joko (Instruktur, Manual) |
+| Pegawai | P02 – Ani Lestari (Administrasi, Front Office & Keuangan) |
+
+**Diagram alur menu:**
+
+```
+                 ┌──────────────────────────────┐
+                 │  Sistem Manajemen Kursus     │
+                 │        Mengemudi             │
+                 └──────────────┬───────────────┘
+        ┌───────────────────────┼───────────────────────┐
+        ▼                       ▼                       ▼
+ 1. Kelola Kursus        2. Kelola Pegawai          3. Keluar
+    (Siswa)
+   ├ 1. Tambah Siswa      ├ 1. Tambah Pegawai
+   ├ 2. Tampilkan Siswa   ├ 2. Tampilkan Pegawai
+   ├ 3. Hapus Siswa       ├ 3. Update Pegawai
+   ├ 4. Update Siswa      └ 4. Kembali
+   └ 5. Kembali
+```
+
+**Langkah penggunaan:**
+
+1. **Menu Utama** – pilih `1` (Siswa), `2` (Pegawai), atau `3` (Keluar).
+2. **Tambah Siswa** – masukkan ID pendaftaran, nama, no. telepon, jumlah pertemuan, tipe kursus (`1` Manual / `2` Matic), lalu pilih apakah butuh sertifikat SIM (`y`/`n`).
+3. **Tampilkan Siswa** – menampilkan seluruh siswa beserta rincian tarif dan **total biaya**.
+4. **Hapus Siswa** – masukkan ID pendaftaran yang ingin dihapus.
+5. **Update Siswa** – masukkan ID pendaftaran, lalu isi nama baru dan jumlah pertemuan baru.
+6. **Tambah Pegawai** – masukkan ID, nama, dan jabatan (`1` Instruktur / `2` Administrasi), lalu isi spesialisasi atau area tugas.
+7. **Tampilkan Pegawai** – menampilkan profil semua pegawai.
+8. **Update Pegawai** – masukkan ID pegawai, isi nama baru, lalu pilih apakah ingin memperbarui data spesifik jabatan (spesialisasi/area tugas). Sistem memilih method *overloading* yang sesuai secara otomatis.
+9. **Keluar** – program berhenti dan `Scanner` ditutup.

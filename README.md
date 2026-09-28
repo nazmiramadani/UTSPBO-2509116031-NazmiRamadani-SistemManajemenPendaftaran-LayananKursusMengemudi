@@ -149,4 +149,78 @@ Tampilan awal program. Pengguna memilih antara kelola siswa (1), kelola pegawai 
 
 
 
+Submenu untuk mengelola data siswa: tambah, tampilkan, hapus, update, dan kembali ke menu utama.
+
+### 4.3 Tampilkan Data Siswa
+
+
+
+Menampilkan seluruh siswa. Contoh keluaran data dummy:
+
+```
+ID Pendaftaran       : 101
+Nama Siswa           : Nazmi Ramadani
+No Telepon           : 081234567890
+Jumlah Pertemuan     : 5 kali
+Tipe Kursus          : Mobil Manual
+Tarif Per Pertemuan  : Rp 230000.0
+Ambil Sertifikat     : Ya
+Biaya Sertifikat     : Rp 300000.0
+Total Biaya          : Rp 1450000.0
+---------------------------------------------
+```
+
+Terlihat bahwa total biaya = (5 × 230.000) + 300.000 = **Rp 1.450.000**.
+
+### 4.4 Tambah Data Siswa
+
+
+
+Proses input data siswa baru, mulai dari ID, nama, telepon, jumlah pertemuan, tipe kursus, hingga pilihan sertifikat. Program menampilkan pesan konfirmasi setelah data berhasil ditambahkan.
+
+### 4.5 Hapus dan Update Data Siswa
+
+
+
+Menunjukkan penghapusan siswa berdasarkan ID (`Data berhasil dihapus`) dan pembaruan nama serta jumlah pertemuan (`Data berhasil diperbarui`). Jika ID tidak ada, muncul pesan `Data tidak ditemukan`.
+
+### 4.6 Menu Kelola Pegawai
+
+
+
+Submenu untuk menambah, menampilkan, dan memperbarui data pegawai.
+
+### 4.7 Tampilkan Data Pegawai
+
+
+
+Menampilkan profil pegawai dengan format berbeda sesuai jabatannya (contoh **polymorphism**):
+
+```
+ID Pegawai   : P01
+Nama Pegawai : Pak Joko
+Jabatan      : Instruktur Mengemudi
+Spesialisasi : Mobil Manual
+---------------------------------------------
+ID Pegawai   : P02
+Nama Pegawai : Ani Lestari
+Jabatan      : Staf Administrasi
+Area Tugas   : Front Office & Keuangan
+---------------------------------------------
+```
+
+### 4.8 Tambah dan Update Data Pegawai
+
+
+
+Menunjukkan penambahan pegawai baru serta pembaruan data. Pesan yang muncul berbeda tergantung pilihan, misalnya `Hanya nama instruktur diperbarui` atau `Nama dan spesialisasi instruktur diperbarui` (contoh **method overloading**).
+
+### 4.9 Keluar dari Program
+
+
+
+Setelah memilih menu `3`, program menampilkan pesan `Terima kasih telah menggunakan aplikasi ini.` dan berhenti.
+
+---
+
 

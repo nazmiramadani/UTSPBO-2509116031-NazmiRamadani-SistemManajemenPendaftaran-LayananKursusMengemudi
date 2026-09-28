@@ -195,7 +195,7 @@ Menunjukkan penambahan pegawai baru. Pesan yang muncul berbeda tergantung piliha
 
 ### 4.10 Update Data Pegawai
 
-<img width="592" height="228" alt="image" src="https://github.com/user-attachments/assets/baa36b98-2675-4cfb-847d-9a985a4703e1" />
+<img width="439" height="222" alt="image" src="https://github.com/user-attachments/assets/12e54c02-a0f6-4fa4-b131-f86c94b10edc" />
 
 Menunjukkan Update data pegawai. Pesan yang muncul berbeda tergantung pilihan, misalnya seperti pada digambar.
 

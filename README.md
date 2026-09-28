@@ -44,3 +44,34 @@ Total Biaya = (Jumlah Pertemuan × Tarif Per Pertemuan) + Biaya Sertifikat (jika
 | **instanceof & Downcasting** | `Service.updatePegawai()` memeriksa tipe pegawai sebelum memanggil method spesifik |
 
 ---
+
+## 2. Struktur Proyek
+
+```
+UTSPBO/
+└── src/
+    ├── com/mycompany/uts/pbo/
+    │   └── UTSPBO.java          # Kelas utama (main) & tampilan menu
+    └── model/
+        ├── KursusMengemudi.java # Superclass siswa/kursus
+        ├── KursusManual.java    # Subclass kursus mobil manual
+        ├── KursusMatic.java     # Subclass kursus mobil matic
+        ├── Pegawai.java         # Superclass pegawai
+        ├── Instruktur.java      # Subclass instruktur
+        ├── Administrasi.java    # Subclass staf administrasi
+        └── Service.java         # Logika CRUD siswa & pegawai
+```
+
+### Penjelasan Kelas
+
+| Kelas | Peran |
+|-------|-------|
+| `UTSPBO` | Titik masuk program; menampilkan menu utama, menu siswa, dan menu pegawai |
+| `Service` | Menyimpan data dalam `ArrayList` dan berisi seluruh operasi tambah, tampil, hapus, dan update |
+| `KursusMengemudi` | Kelas induk berisi ID pendaftaran, nama siswa, no. telepon, dan jumlah pertemuan |
+| `KursusManual` / `KursusMatic` | Menambahkan tarif, opsi sertifikat, dan perhitungan total biaya |
+| `Pegawai` | Kelas induk berisi ID dan nama pegawai |
+| `Instruktur` | Menambahkan atribut **spesialisasi** (Manual/Matic/Semua) |
+| `Administrasi` | Menambahkan atribut **area tugas** (Front Office, Keuangan, dll.) |
+
+---

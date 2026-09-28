@@ -98,7 +98,7 @@ java com.mycompany.uts.pbo.UTSPBO
 
 ### 3.3 Cara Kerja Sistem
 
-Saat program dijalankan, `Service` otomatis memuat **data dummy** agar menu *Tampilkan* langsung memiliki isi:
+Saat program dijalankan, `Service` otomatis memuat **data dummy**:
 
 | Jenis | Data |
 |-------|------|

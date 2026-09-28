@@ -18,7 +18,7 @@ public class Service {
     
     private void muatDataDummy() {
         daftarSiswa.add(new KursusManual(101, "Nazmi Ramadani", "081234567890", 5, 230000, true, 300000));
-        daftarSiswa.add(new KursusMatic(102, "Diandra Riskita", "081987654321", 4, 160000, false, 300000));
+        daftarSiswa.add(new KursusMatic(102, "Anantha Hanif", "081987654321", 4, 160000, false, 300000));
         daftarPegawai.add(new Instruktur("P01", "Pak Joko", "Mobil Manual"));
         daftarPegawai.add(new Administrasi("P02", "Ani Lestari", "Front Office & Keuangan"));
     }

@@ -103,7 +103,7 @@ Saat program dijalankan, `Service` otomatis memuat **data dummy**:
 | Jenis | Data |
 |-------|------|
 | Siswa | 101 – Nazmi Ramadani (Manual, 5 pertemuan, dengan sertifikat) |
-| Siswa | 102 – Diandra Riskita (Matic, 4 pertemuan, tanpa sertifikat) |
+| Siswa | 102 – Anantha Hanif (Matic, 4 pertemuan, tanpa sertifikat) |
 | Pegawai | P01 – Pak Joko (Instruktur, Manual) |
 | Pegawai | P02 – Ani Lestari (Administrasi, Front Office & Keuangan) |
 
